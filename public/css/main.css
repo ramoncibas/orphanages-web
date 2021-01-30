@@ -1,24 +1,30 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /* seletor de atributo [name=lat] */
 }
-:root{
-    font-size: 62.5%; /*10px*/
+
+:root {
+    font-size: 62.5%;
+    /*10px*/
 }
-body{
+
+body {
     /*color: red !important;*/
     height: 100vh;
     color: white;
     background: #EBE2F5;
 }
 
-body, input, button, textarea{
+body,
+input,
+button,
+textarea {
     /*font-weight: 400;
     font-size: 18px;
     line-height: 1;
     font-family: 'Nunito', sans-serif;*/
-    
+
     font: 400 1.8rem/1 'Nunito', sans-serif;
 }

@@ -1,12 +1,13 @@
-#page-orphanages{
+#page-orphanages {
     width: 100%;
     height: 100%;
 
     display: flex;
 }
 
-aside{
-    width: clamp(24rem, 25vw, 44rem);/* 300px */
+aside {
+    width: clamp(24rem, 25vw, 44rem);
+    /* 300px */
     background: linear-gradient(329.54deg, #15B6D6 0%, #15D6D6 100%);
     padding: clamp(3rem, 5vw, 8rem);
 
@@ -15,17 +16,21 @@ aside{
     justify-content: space-between;
 }
 
-aside h2{
+aside h2 {
     margin-top: 6.4rem;
     font: 800 clamp(2rem, 5vw, 3.6rem)/1.1 'Ninito', sans-serif;
 }
 
-aside p{
+aside p {
     margin-top: 2.4rem;
     font: 400 1.6rem/1.5 'Ninito', sans-serif;
 }
 
-aside footer p{
+aside footer {
+    margin-bottom: 12rem;
+}
+
+aside footer p {
     margin-top: .8rem;
 }
 
@@ -38,7 +43,7 @@ aside footer p{
 
 /* button */
 
-a.create-orphanage{
+a.create-orphanage {
     position: absolute;
     right: 4rem;
     bottom: 4rem;
@@ -49,7 +54,7 @@ a.create-orphanage{
     background: #15C3D6;
     border: 0;
     border-radius: 2rem;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,16 +62,42 @@ a.create-orphanage{
     transition: background-color 200ms;
 }
 
-a.create-orphanage:hover{
+a.create-orphanage:hover {
     background: #17D6EB;
 }
 
-.leaflet-popup-content-wrapper{
+a.button-back {
+    position: absolute;
+    bottom: 4rem;
+    z-index: 10;
+
+    width: 6.4rem;
+    height: 6.4rem;
+    background: #12AFCB;
+    border: 0;
+    border-radius: 1.6rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 200ms;
+}
+
+a.button-back:hover {
+    background: #17D6EB;
+}
+
+.mob {
+    left: 4rem;
+}
+
+.leaflet-popup-content-wrapper {
     background: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
 }
 
-.leaflet-popup-content{
+.leaflet-popup-content {
     color: #0089A5;
     margin: .8rem 1.2rem;
 
@@ -75,7 +106,7 @@ a.create-orphanage:hover{
     justify-content: space-between;
 }
 
-.leaflet-popup-content a{
+.leaflet-popup-content a {
     width: 4rem;
     height: 4rem;
     background: #15C3D6;
@@ -89,7 +120,7 @@ a.create-orphanage:hover{
     transition: background-color .2s;
 }
 
-.leaflet-popup-content a:hover{
+.leaflet-popup-content a:hover {
     background: #17D6EB;
 }
 
@@ -97,7 +128,20 @@ a.create-orphanage:hover{
     display: none;
 }
 
-.leaflet-container{
+.leaflet-container {
     font: 700 1.8rem/1 'Nunito', sans-serif;
     z-index: 5;
+}
+
+/* Mobile */
+@media (min-width: 760px) {
+    a.button-back.mob {
+        display: none;
+    }
+}
+
+@media (max-width: 760px) {
+    aside {
+        display: none;
+    }
 }
